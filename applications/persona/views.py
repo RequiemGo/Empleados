@@ -8,6 +8,7 @@ from django.urls import reverse_lazy
 from applications.departamento.models import Departamento
 # models
 from .models import Habilidades, Persona
+from .forms import PersonaForm
 
 
 class InicioView(TemplateView):
@@ -100,8 +101,7 @@ class SuccessRegister(TemplateView):
 class PersonaCreateView(CreateView):
     model = Persona
     template_name = "persona/create_view.html"
-    fields = ['first_name', 'last_name', 'job',
-              'departamento', 'habilidades', 'avatar']
+    form_class = PersonaForm
     success_url = reverse_lazy('persona_app:empleados_admin')
 
     def form_valid(self, form):
