@@ -16,8 +16,8 @@
                 {{persona.get_job_display}}
             </div>
 
-            {% if empleado.avatar %}
-            <img src="{{ empleado.avatar.url }}">
+            {% if persona.avatar %}
+            <img src="{{ persona.avatar.url }}">
             {% else %}
             <img src="{% static 'img/vacio.jpg' %}">
             {% endif %}
