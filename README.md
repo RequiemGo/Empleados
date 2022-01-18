@@ -9,3 +9,4 @@ Esta página web cuenta con un *CRUD* de una tabla de **empleados** de una posib
 **Requisitos:**
 - psycopg2
 - Pillow
+- unipath
