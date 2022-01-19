@@ -6,7 +6,7 @@ import django_heroku
 DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['empleado.herokuapp.com']
+ALLOWED_HOSTS = ['empleados-curso.herokuapp.com']
 
 # DATABASES = {
 #     'default': {
